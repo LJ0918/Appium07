@@ -1,0 +1,71 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1538204958639" stop="1538204958692">
+  <name>test01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1538204958639" status="passed" stop="1538204958643">
+      <name>TestAllure.test001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="1052-MainThread"/>
+        <label name="host" value="084CJ27JT27NBKY"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1538204958642" status="passed" stop="1538204958643">
+          <name>执行学院更新操作</name>
+          <title>执行学院更新操作</title>
+          <attachments>
+            <attachment source="5c53f885-3661-4710-afd2-2f0791e6354e-attachment.txt" title="开始断言" type="text/plain"/>
+            <attachment source="ffdb1601-94c9-4da8-a1b2-4ea5daaff98b-attachment.txt" title="断言结束" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1538204958650" status="passed" stop="1538204958652">
+      <name>TestAllure.test002</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="1052-MainThread"/>
+        <label name="host" value="084CJ27JT27NBKY"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1538204958652" status="passed" stop="1538204958652">
+          <name>执行学院删除操作</name>
+          <title>执行学院删除操作</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1538204958653" status="failed" stop="1538204958692">
+      <name>TestAllure.test003</name>
+      <failure>
+        <message>AssertionError: assert False</message>
+        <stack-trace>self = &lt;test01.TestAllure object at 0x0000000003A29B38&gt;
+
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
+    def test003(self):
+        print('test003被执行')
+&gt;       assert False
+E       assert False
+
+Scripts\test01.py:19: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="1052-MainThread"/>
+        <label name="host" value="084CJ27JT27NBKY"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
