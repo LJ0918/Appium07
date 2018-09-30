@@ -17,3 +17,5 @@ class TestAllure():
     def test003(self):
         print('test003被执行')
         assert False
+    def test004(self):
+        print('test004被执行')
